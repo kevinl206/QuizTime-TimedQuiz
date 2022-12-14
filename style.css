@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* width: 100vw;
+    height: 50vh; */
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+.container1 {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+#container1h2 {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  #question-container {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+.container {
+    width: 500px;
+    max-width: 50%;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 10px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    float: middle;
+}
+
+.btn {
+    background-color: navy;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.btn:hover {
+    border-color: green;
+    color: green;
+    padding: 20px;
+}
+/* btn grid is added to make the answer a list style answer */
+.btn-grid {
+    display: grid;
+    gap: 25px;
+    margin:30px;
+}
+
+.start-btn, .next-btn {
+    font-size: 3rem;
+    font-weight: bolder;
+    padding: 20px 20px;
+}
+.btn.correct {
+    color: green;
+}
+.btn.wrong {
+    color: red
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-form {
+    display: none;
+}
+/* time is added so user are rush to answer the question without taking their sweet time */
+.time {
+    display: flex;
+    border: rgb(255, 255, 255);
+    padding-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+  }
+/* added a high score so users can view who has the highest score */
+  #hiscore {
+    font-size: 16px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 200%;
+  }

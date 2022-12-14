@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Quiz Time</title>
+</head>
+<body>
+    <header>
+        <button id="hiscore">View Highscores</button>
+        <div class="time">
+          <div class="time-text" style="text-align: center"></div>
+          <div id="timer-seconds"></div>
+        </div>
+      </header>
+      <main>
+    <div class="container1">
+        <h1>Quiz Challenge!!!</h1>
+        <h2 id="container1h2">
+          You will be tested on your knowledge of coding!!! not only your knowledge will be tested but on fast are you able to answer the questions!!!
+        </h2>
+      </div>
+      
+
+    <!-- added container that will hold the 4 answers to choose from -->
+    <div class="container">
+        <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn hide">Answer 1</button>
+            <button class="btn hide">Answer 2</button>
+            <button class="btn hide">Answer 3</button>
+            <button class="btn hide">Answer 4</button>
+        </div>
+    </div>
+    <div class="correct-incorrect">
+        <p id="correct-incorrect-text"></p>
+      </div>
+<!-- added a start button for the users to click on when they are ready to play the -->
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+        <div id="initialform" class="hide-form">
+          <label for="initials" 
+            >Please enter your initials here:</label>
+          <input type="text" id="initialsText"/>
+          <button id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
